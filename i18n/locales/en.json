@@ -1,0 +1,208 @@
+{
+  "nav": {
+    "about": "About Me",
+    "employment": "Employment",
+    "skills": "Skills",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "sections": {
+    "about": "About Me",
+    "employment": "Employment History",
+    "skills": "Tech Skills",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact Me"
+  },
+  "overview": {
+    "title": "Senior Full-Stack Developer",
+    "subtitle": "Next.js, Node.js, PostgreSQL. APIs, AI/LLM, and platform integrations for modern web products.",
+    "cta": {
+      "projects": "View projects",
+      "contact": "Contact me",
+      "resume": "Download Resume"
+    }
+  },
+  "about": {
+    "photoAlt": "Portrait photo",
+    "p1": "I am a full-stack developer with a long-standing passion for software development and continuous learning. I build reliable, scalable web platforms with a focus on clean architecture, maintainable code, and pragmatic technical decisions aligned with business needs.",
+    "p2": "My core experience is centered around Next.js, Node.js, and PostgreSQL, complemented by Supabase, workflow automation with n8n, and AI/LLM integrations, including RAG-based architectures. I also work comfortably in mixed environments with Angular frontends and Django/DRF backends."
+  },
+  "resume": {
+    "title": "Resume"
+  },
+  "contact": {
+    "kicker": "Get in touch",
+    "title": "Contact.",
+    "body": "Tell me about your project, goals, or how I can help. I will respond within 1-2 business days.",
+    "photoAlt": "Contact section photo",
+    "form": {
+      "nameLabel": "Your Name",
+      "namePlaceholder": "What is your name?",
+      "emailLabel": "Your Email",
+      "emailPlaceholder": "What is your email?",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "What do you want to say?",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Thanks! Your message has been sent.",
+      "error": "Please fill out all fields and try again."
+    },
+    "email": "Email me",
+    "linkedin": "Message on LinkedIn"
+  },
+  "education": {
+    "photoAlt": "University campus",
+    "school": "California Lutheran University",
+    "items": [
+      {
+        "degree": "Master of Science (M.S.) Computer Science",
+        "dates": "Jul 2005 – Aug 2007"
+      },
+      {
+        "degree": "Bachelor of Science (B.S.) Computer Science",
+        "dates": "Jul 2001 – Jun 2005"
+      }
+    ]
+  },
+  "employment": {
+    "scopeLabel": "Scope:",
+    "items": [
+      {
+        "role": "Senior AI/ML Engineer",
+        "company": "Descartes | Waterloo, Ontario, Canada",
+        "dates": "May 2023 – Dec 2025",
+        "scope": "Enterprise SaaS, AI integration, ERP modernization",
+        "bullets": [
+          "Lead architecture for distributed SaaS platform supporting multi-department ERP workflows (finance, HR, operations)",
+          "Designed modular microservices using Node.js, Go, and .NET",
+          "Built frontend platforms using Next.js, Vue (Nuxt), React, and Astro",
+          "Implemented headless CMS architecture with Sanity, Strapi, and Prismic",
+          "Designed AI-powered enterprise assistant using LLM + RAG pipeline",
+          "Built document ingestion + embedding system with vector search",
+          "Fine-tuned domain-specific language models for internal automation",
+          "Developed warehouse Object Detection System (YOLOv8, PyTorch) improving inventory accuracy",
+          "Deployed ML services with FastAPI + Docker + Kubernetes",
+          "Managed secure cloud deployments on Microsoft Azure"
+        ]
+      },
+      {
+        "role": "Software Engineer (AI Platform & FinTech Systems)",
+        "company": "Globalization Partners | Boston, MA, USA",
+        "dates": "Mar 2020 – Apr 2023",
+        "scope": "Financial systems, ML experimentation, high-availability APIs",
+        "bullets": [
+          "Developed high-throughput financial APIs in Node.js, Go, C#, .NET",
+          "Built fraud detection prototypes using machine learning models",
+          "Implemented GPT-powered financial insights assistant",
+          "Designed compliance documentation search using RAG architecture",
+          "Built ML training pipelines in Python (Pandas, NumPy, Scikit-learn, PyTorch)",
+          "Improved anomaly detection accuracy by 28%",
+          "Led database optimization for PostgreSQL & MongoDB"
+        ]
+      },
+      {
+        "role": "Senior Full-Stack Developer",
+        "company": "Globalization Partners | Boston, MA, USA",
+        "dates": "Jan 2018 – Apr 2020",
+        "scope": "SaaS scaling, CMS ecosystems, ERP integrations",
+        "bullets": [
+          "Helped scale SaaS product from MVP to enterprise-ready platform",
+          "Integrated ERP workflows (inventory, billing, reporting systems)",
+          "Built content-driven marketing & product platforms using Next.js + Nuxt",
+          "Implemented CMS architecture using Strapi + PostgreSQL",
+          "Introduced automated deployments and infrastructure-as-code",
+          "Began predictive modeling experiments for user behavior analytics"
+        ]
+      },
+      {
+        "role": "Full-Stack Developer – Commerce Systems",
+        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
+        "dates": "Jun 2015 – Dec 2017",
+        "scope": "E-commerce architecture, performance optimization",
+        "bullets": [
+          "Built scalable commerce platform using Next.js, Node.js, MongoDB",
+          "Integrated Shopify and NetSuite ERP",
+          "Developed custom checkout and payment systems",
+          "Implemented Supabase authentication & role-based access",
+          "Built early recommendation engine prototype",
+          "Improved checkout conversion rate by 18%"
+        ]
+      },
+      {
+        "role": "Backend Developer – ERP & API Systems",
+        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
+        "dates": "Apr 2013 – May 2015",
+        "scope": "ERP system architecture, API modernization",
+        "bullets": [
+          "Designed REST APIs using Node.js, Flask, Django REST",
+          "Built reporting engines and data workflows for ERP modules",
+          "Optimized PostgreSQL indexing and schema design",
+          "Reduced server response times by 35%",
+          "Helped migrate legacy monolith to modular service structure"
+        ]
+      },
+      {
+        "role": "Senior Frontend Engineer",
+        "company": "Chegg Inc. | Santa Clara, CA, USA",
+        "dates": "Jul 2010 – Mar 2013",
+        "bullets": [
+          "Led migration to Angular SPA architecture",
+          "Built enterprise dashboards and analytics panels",
+          "Improved UI performance by 30%",
+          "Standardized component libraries"
+        ]
+      },
+      {
+        "role": "Frontend Developer",
+        "company": "Chegg Inc. | Santa Clara, CA, USA",
+        "dates": "Aug 2008 – Jun 2010",
+        "bullets": [
+          "Developed CMS-driven business websites",
+          "Built responsive UI systems using HTML, CSS, JavaScript",
+          "Optimized SEO performance"
+        ]
+      },
+      {
+        "role": "Web Development Intern",
+        "company": "Chegg Inc. | Santa Clara, CA, USA",
+        "dates": "Jun 2007 – Jul 2008",
+        "bullets": [
+          "Assisted in frontend development and database support",
+          "Gained foundational experience in web systems architecture"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "back": "Back to home",
+    "github": "GitHub",
+    "liveDemo": "Live Demo",
+    "notFound": "Project not found.",
+    "metaTitle": "Project — Portfolio",
+    "items": {
+      "zetabarber-platform": {
+        "title": "ZetaBarber",
+        "description": "Discovery and booking platform for local barbers built with Next.js and Node.js, using shadcn/ui and React Hooks for a fast, responsive UX. Includes search by city, appointment scheduling, and automated reminders."
+      },
+      "warmly-ai-gtm": {
+        "title": "Warmly AI GTM Platform",
+        "description": "AI-native GTM platform built with React, Redux, and Tailwind CSS, integrating AI/LLM services with a .NET Core backend. Covers person-level intent signals, AI chat/email engagement, and workflow orchestration for revenue teams."
+      },
+      "gmelius-email-collaboration": {
+        "title": "Gmelius",
+        "description": "AI email assistant and shared inbox suite built with React on AWS, backed by .NET Core services. Uses AI/LLM fine-tuning for drafting and triage, with Storybook for UI consistency and Swagger UI for APIs."
+      }
+    }
+  },
+  "skills": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Databases",
+    "cms": "CMS",
+    "ai": "AI & ML",
+    "tools": "Tools & DevOps"
+  }
+}
