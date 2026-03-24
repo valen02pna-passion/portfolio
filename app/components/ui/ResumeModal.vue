@@ -51,7 +51,7 @@ const emit = defineEmits<{
   'update:modelValue': [value: boolean]
 }>()
 
-const resumeUrl = '/Roy%20Andreson.pdf'
+const resumeUrl = '/Valentin%20Castano.pdf'
 
 function close() {
   emit('update:modelValue', false)

@@ -6,7 +6,7 @@
     </NuxtLink>
 
     <div v-if="localizedProject"
-      class="overflow-hidden rounded-2xl border border-slate-200/60 bg-white/80 shadow-sm dark:border-white/10 dark:bg-white/5">
+      class="overflow-visible rounded-2xl border border-slate-200/60 bg-white/80 shadow-sm dark:border-white/10 dark:bg-white/5">
       <div class="px-6 pt-6 sm:px-8">
         <AutoFlowCarousel :images="gallery" :alt="localizedProject.title" />
       </div>
@@ -19,22 +19,21 @@
           <p class="mt-3 text-slate-700 dark:text-slate-300">
             {{ localizedProject.description }}
           </p>
+          <div v-if="localizedProject.detailedDescription"
+            class="mt-6 space-y-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">
+            <p v-for="(paragraph, i) in localizedProject.detailedDescription.split('\n')" :key="i">
+              {{ paragraph }}
+            </p>
+          </div>
         </div>
 
         <div class="flex flex-wrap gap-2">
-          <span v-for="tag in localizedProject.stack" :key="tag"
-            class="rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1 text-xs text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
-            {{ tag }}
-          </span>
+          <SkillTag v-for="tag in localizedProject.stack" :key="tag" :name="tag" />
         </div>
 
         <div class="flex flex-wrap gap-3">
-          <a v-if="localizedProject.githubUrl" :href="localizedProject.githubUrl" target="_blank" rel="noreferrer"
-            class="btn-secondary">
-            {{ t('projects.github') }}
-          </a>
           <a v-if="localizedProject.liveDemoUrl" :href="localizedProject.liveDemoUrl" target="_blank" rel="noreferrer"
-            class="btn-primary">
+            class="btn-live-demo">
             {{ t('projects.liveDemo') }}
           </a>
         </div>
@@ -49,6 +48,7 @@
 
 <script setup lang="ts">
 import AutoFlowCarousel from '~/components/ui/AutoFlowCarousel.vue'
+import SkillTag from '~/components/ui/SkillTag.vue'
 import { projects } from '~/data/projects'
 
 const { t, te } = useI18n()
@@ -63,6 +63,7 @@ const localizedProject = computed(() => {
     ...project.value,
     title: te(`${base}.title`) ? t(`${base}.title`) : project.value.title,
     description: te(`${base}.description`) ? t(`${base}.description`) : project.value.description,
+    detailedDescription: te(`${base}.detailedDescription`) ? t(`${base}.detailedDescription`) : project.value.detailedDescription,
   }
 })
 const gallery = computed(() => {
@@ -83,11 +84,11 @@ useSeoMeta({
 <style scoped>
 @reference "tailwindcss";
 
-.btn-primary {
-  @apply inline-flex items-center justify-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-slate-200;
+.btn-live-demo {
+  @apply inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-200;
 }
 
-.btn-secondary {
-  @apply inline-flex items-center justify-center rounded-lg border border-white/15 bg-transparent px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/5;
+.dark .btn-live-demo {
+  @apply bg-white text-slate-950 hover:bg-slate-200;
 }
 </style>

@@ -12,13 +12,16 @@
     ]"
   >
     <img
-      v-if="logoUrl"
+      v-if="logoUrl && (logoUrl.startsWith('http') || logoUrl.startsWith('/'))"
       :src="logoUrl"
       :alt="companyName"
-      referrerpolicy="no-referrer"
       class="h-full w-full object-contain p-1"
-      :class="{ 'dark:invert': invertInDark }"
-      @error="$emit('error', $event)"
+    />
+    <Icon
+      v-else-if="logoUrl"
+      :name="logoUrl"
+      class="h-full w-full object-contain p-1"
+      :class="{ 'text-slate-900 dark:text-white': invertInDark }"
     />
     <span v-else class="text-xs font-bold text-slate-600 dark:text-slate-300">
       {{ badge }}

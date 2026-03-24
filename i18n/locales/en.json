@@ -17,8 +17,8 @@
     "contact": "Contact Me"
   },
   "overview": {
-    "title": "Senior Full-Stack Developer",
-    "subtitle": "Next.js, Node.js, PostgreSQL. APIs, AI/LLM, and platform integrations for modern web products.",
+    "title": "Staff Software Engineer",
+    "subtitle": "Bridging low-level systems, GenAI, and reliable infrastructure for modern web products. Specializing in high-performance RAG pipelines and distributed vector database indexing.",
     "cta": {
       "projects": "View projects",
       "contact": "Contact me",
@@ -27,8 +27,8 @@
   },
   "about": {
     "photoAlt": "Portrait photo",
-    "p1": "I am a full-stack developer with a long-standing passion for software development and continuous learning. I build reliable, scalable web platforms with a focus on clean architecture, maintainable code, and pragmatic technical decisions aligned with business needs.",
-    "p2": "My core experience is centered around Next.js, Node.js, and PostgreSQL, complemented by Supabase, workflow automation with n8n, and AI/LLM integrations, including RAG-based architectures. I also work comfortably in mixed environments with Angular frontends and Django/DRF backends."
+    "p1": "I am a Staff Software Engineer with over 10 years of experience building reliable, scalable systems. With a background spanning from low-level infrastructure to GenAI pipelines, I focus on clean architecture and pragmatic technical decisions.",
+    "p2": "My core experience is centered around Go, Python, Rust, and TypeScript, complemented by vector databases like Pinecone and Milvus. I specialize in designing high-performance RAG pipelines, LLM-orchestrated agent frameworks, and distributed microservices."
   },
   "resume": {
     "title": "Resume"
@@ -54,16 +54,24 @@
     "linkedin": "Message on LinkedIn"
   },
   "education": {
-    "photoAlt": "University campus",
-    "school": "California Lutheran University",
+    "title": "Education",
+    "photoAlt": "MIT Campus",
+    "school": "Massachusetts Institute of Technology",
+    "resumeDescription": "Academic background focused on Computer Science and Engineering, with specialized coursework in Distributed Systems, Artificial Intelligence, and Advanced Algorithms.",
     "items": [
       {
-        "degree": "Master of Science (M.S.) Computer Science",
-        "dates": "Jul 2005 – Aug 2007"
+        "degree": "Master of Engineering (M.Eng.) in Computer Science",
+        "dates": "Aug 2014 – May 2016",
+        "campusUrl": "https://arts.mit.edu/wp-content/uploads/2016/03/1024px-Great_Dome_Massachusetts_Institute_of_Technology_Cambridge_MA.jpg",
+        "logoUrl": "https://studyarchitecture.com/wp-content/uploads/mit-logo-1-2-300x189.png",
+        "description": "Specialized in Distributed Systems and AI. Thesis on scalable consensus protocols. GPA: 5.0/5.0."
       },
       {
-        "degree": "Bachelor of Science (B.S.) Computer Science",
-        "dates": "Jul 2001 – Jun 2005"
+        "degree": "Bachelor of Science (B.S.) Computer Science, Universidade de São Paulo (USP)",
+        "dates": "Mar 2009 – Dec 2013",
+        "campusUrl": "https://cdn.brandfetch.io/usp.br/fallback/transparent/w/600/h/200/banner?c=1bfwsmEH20zzEfSNTed",
+        "logoUrl": "https://cdn.brandfetch.io/idXV4dU_JO/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1708512761356",
+        "description": "Foundational Computer Science coursework with an emphasis on Data Structures, Operating Systems, and Network Security."
       }
     ]
   },
@@ -71,107 +79,62 @@
     "scopeLabel": "Scope:",
     "items": [
       {
-        "role": "Senior AI/ML Engineer",
-        "company": "Descartes | Waterloo, Ontario, Canada",
-        "dates": "May 2023 – Dec 2025",
-        "scope": "Enterprise SaaS, AI integration, ERP modernization",
+        "role": "Staff Software Engineer",
+        "company": "Pinecone | San Francisco, CA, USA",
+        "dates": "May 2023 – Present",
+        "scope": "Vector Database Infrastructure, Core API",
         "bullets": [
-          "Lead architecture for distributed SaaS platform supporting multi-department ERP workflows (finance, HR, operations)",
-          "Designed modular microservices using Node.js, Go, and .NET",
-          "Built frontend platforms using Next.js, Vue (Nuxt), React, and Astro",
-          "Implemented headless CMS architecture with Sanity, Strapi, and Prismic",
-          "Designed AI-powered enterprise assistant using LLM + RAG pipeline",
-          "Built document ingestion + embedding system with vector search",
-          "Fine-tuned domain-specific language models for internal automation",
-          "Developed warehouse Object Detection System (YOLOv8, PyTorch) improving inventory accuracy",
-          "Deployed ML services with FastAPI + Docker + Kubernetes",
-          "Managed secure cloud deployments on Microsoft Azure"
+          "Lead scale out of vector database indexing and search pipelines using Rust and Go, achieving 10x throughput improvement",
+          "Designed multi-tenant orchestration layer using Kubernetes and custom controllers for dynamic resource allocation",
+          "Improved high-availability across global deployments by implementing a distributed consensus-based configuration service",
+          "Collaborated with researchers to optimize HNSW graph traversal, reducing search latency by 35% for billion-scale datasets"
         ]
       },
       {
-        "role": "Software Engineer (AI Platform & FinTech Systems)",
-        "company": "Globalization Partners | Boston, MA, USA",
+        "role": "Senior Software Engineer",
+        "company": "Canonical | London, UK",
         "dates": "Mar 2020 – Apr 2023",
-        "scope": "Financial systems, ML experimentation, high-availability APIs",
+        "scope": "Ubuntu Server, OpenStack, Kubernetes",
         "bullets": [
-          "Developed high-throughput financial APIs in Node.js, Go, C#, .NET",
-          "Built fraud detection prototypes using machine learning models",
-          "Implemented GPT-powered financial insights assistant",
-          "Designed compliance documentation search using RAG architecture",
-          "Built ML training pipelines in Python (Pandas, NumPy, Scikit-learn, PyTorch)",
-          "Improved anomaly detection accuracy by 28%",
-          "Led database optimization for PostgreSQL & MongoDB"
+          "Contributed to core Ubuntu virtualization and cloud orchestration tools, specifically focusing on LXD and QEMU integration",
+          "Maintained Canonical's distributed microk8s projects, leading the transition to a more modular architecture",
+          "Developed automated kernel performance testing suites in Python, reducing regression detection time by 40%",
+          "Architected a distributed snapshots service for LXD using Go, enhancing data durability for clustered environments"
         ]
       },
       {
-        "role": "Senior Full-Stack Developer",
-        "company": "Globalization Partners | Boston, MA, USA",
+        "role": "Senior Software Engineer",
+        "company": "Wayfair | Boston, MA, USA",
         "dates": "Jan 2018 – Apr 2020",
-        "scope": "SaaS scaling, CMS ecosystems, ERP integrations",
+        "scope": "E-commerce infrastructure, scaleout",
         "bullets": [
-          "Helped scale SaaS product from MVP to enterprise-ready platform",
-          "Integrated ERP workflows (inventory, billing, reporting systems)",
-          "Built content-driven marketing & product platforms using Next.js + Nuxt",
-          "Implemented CMS architecture using Strapi + PostgreSQL",
-          "Introduced automated deployments and infrastructure-as-code",
-          "Began predictive modeling experiments for user behavior analytics"
+          "Scaled Wayfair's checkout and catalog APIs to support high traffic volume during peak events like Way Day",
+          "Migrated monolithic PHP systems to modular Python and Next.js services using a strangler fig pattern",
+          "Optimized catalog PostgreSQL databases reducing query times by 50% through advanced indexing and query refactoring",
+          "Built a real-time inventory synchronization service using Kafka and Node.js for global stock management"
         ]
       },
       {
-        "role": "Full-Stack Developer – Commerce Systems",
-        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
+        "role": "Software Engineer",
+        "company": "HubSpot | Boston, MA, USA",
         "dates": "Jun 2015 – Dec 2017",
-        "scope": "E-commerce architecture, performance optimization",
+        "scope": "CRM backend services",
         "bullets": [
-          "Built scalable commerce platform using Next.js, Node.js, MongoDB",
-          "Integrated Shopify and NetSuite ERP",
-          "Developed custom checkout and payment systems",
-          "Implemented Supabase authentication & role-based access",
-          "Built early recommendation engine prototype",
-          "Improved checkout conversion rate by 18%"
+          "Built Java microservices for HubSpot's marketing automation tools, processing millions of contact events daily",
+          "Developed responsive components for the dashboard frontend using React, improving user engagement metrics",
+          "Designed a highly scalable email deliverability monitoring system that reduced bounce rates by 15%",
+          "Implemented OAuth2.0 integrations for third-party CRM extensions, ensuring secure data exchange"
         ]
       },
       {
-        "role": "Backend Developer – ERP & API Systems",
-        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
-        "dates": "Apr 2013 – May 2015",
-        "scope": "ERP system architecture, API modernization",
+        "role": "Software Engineer Intern",
+        "company": "Google | Mountain View, CA, USA",
+        "dates": "May 2014 – Aug 2014",
+        "scope": "Infrastructure",
         "bullets": [
-          "Designed REST APIs using Node.js, Flask, Django REST",
-          "Built reporting engines and data workflows for ERP modules",
-          "Optimized PostgreSQL indexing and schema design",
-          "Reduced server response times by 35%",
-          "Helped migrate legacy monolith to modular service structure"
-        ]
-      },
-      {
-        "role": "Senior Frontend Engineer",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Jul 2010 – Mar 2013",
-        "bullets": [
-          "Led migration to Angular SPA architecture",
-          "Built enterprise dashboards and analytics panels",
-          "Improved UI performance by 30%",
-          "Standardized component libraries"
-        ]
-      },
-      {
-        "role": "Frontend Developer",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Aug 2008 – Jun 2010",
-        "bullets": [
-          "Developed CMS-driven business websites",
-          "Built responsive UI systems using HTML, CSS, JavaScript",
-          "Optimized SEO performance"
-        ]
-      },
-      {
-        "role": "Web Development Intern",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Jun 2007 – Jul 2008",
-        "bullets": [
-          "Assisted in frontend development and database support",
-          "Gained foundational experience in web systems architecture"
+          "Assisted in distributed system testing and monitoring architectures for Google Cloud Platform services",
+          "Optimized internal log aggregation pipelines, reducing processing latency for infrastructure health metrics",
+          "Contributed to open-source benchmarking tools used by the Site Reliability Engineering team"
         ]
       }
     ]
@@ -184,16 +147,19 @@
     "metaTitle": "Project — Portfolio",
     "items": {
       "zetabarber-platform": {
-        "title": "ZetaBarber",
-        "description": "Discovery and booking platform for local barbers built with Next.js and Node.js, using shadcn/ui and React Hooks for a fast, responsive UX. Includes search by city, appointment scheduling, and automated reminders."
+        "title": "ZetaBarber Platform",
+        "description": "Comprehensive discovery and booking platform for local barbers. Engineered with Next.js and Node.js for SEO-optimized performance. Leveraged shadcn/ui and Radix UI primitives for an accessible, premium-feel UX. Integrated Stripe for secure payments and Twilio for automated appointment reminders.",
+        "detailedDescription": "ZetaBarber is a full-stack platform designed to revolutionize the local barbering industry. My role involved architecting a highly performant SSR frontend with Next.js and building a scalable backend on AWS. We implemented a sophisticated recommendation engine that connects users with highly-rated barbers based on style preferences and proximity. The platform also features real-time scheduling with double-booking prevention, automated SMS notifications via Twilio, and a robust merchant dashboard for barbers to manage their business."
       },
       "warmly-ai-gtm": {
         "title": "Warmly AI GTM Platform",
-        "description": "AI-native GTM platform built with React, Redux, and Tailwind CSS, integrating AI/LLM services with a .NET Core backend. Covers person-level intent signals, AI chat/email engagement, and workflow orchestration for revenue teams."
+        "description": "Enterprise-grade AI-native GTM platform. Built a high-performance React frontend synchronized with a .NET Core backend via SignalR. Orchestrated LLM agents using LangChain to automate lead research, person-level intent detection, and personalized email sequencing.",
+        "detailedDescription": "At Warmly, we built an AI-driven Go-To-Market platform that empowers sales teams with real-time visitor identification and intent detection. I led the development of a complex multi-agent system that autonomously researches prospects and drafts personalized outreach. The system leverages state-of-the-art LLMs and a custom .NET Core backend to maintain high throughput and reliability. Our frontend integration with SignalR ensures that sales reps receive instantaneous updates as visitors land on their sites, providing a significant edge in conversion rates."
       },
       "gmelius-email-collaboration": {
-        "title": "Gmelius",
-        "description": "AI email assistant and shared inbox suite built with React on AWS, backed by .NET Core services. Uses AI/LLM fine-tuning for drafting and triage, with Storybook for UI consistency and Swagger UI for APIs."
+        "title": "Gmelius Collaboration Suite",
+        "description": "AI-powered shared inbox for enterprise teams. Architected the frontend with React and Redux, deployed on highly available AWS infrastructure. Implemented real-time collaboration features and AI/LLM fine-tuning for automated email triaging and smart drafting.",
+        "detailedDescription": "Gmelius transforms Gmail into a powerful team collaboration workspace. As a primary architect, I focused on the real-time synchronization of shared inboxes across distributed teams. We implemented a sophisticated conflict resolution system to ensure data consistency and leveraged LLMs to provide intelligent email summaries and suggested replies. The architecture is built for high availability on AWS, serving thousands of global enterprise clients with minimal latency. We also integrated advanced analytics to help teams optimize their communication workflows."
       }
     }
   },
@@ -203,6 +169,37 @@
     "databases": "Databases",
     "cms": "CMS",
     "ai": "AI & ML",
-    "tools": "Tools & DevOps"
+    "tools": "Tools & DevOps",
+    "descriptions": {
+      "typescript": "Type-safe JavaScript for scalable applications.",
+      "go": "High-performance systems programming and microservices.",
+      "python": "Versatile language for AI, data science, and backend.",
+      "rust": "Memory-safe systems programming with extreme performance.",
+      "nextjs": "The React framework for production-grade web apps.",
+      "nuxtjs": "The intuitive Vue framework for building web apps.",
+      "react": "Component-based library for building user interfaces.",
+      "tailwindcss": "Utility-first CSS framework for rapid UI development.",
+      "nodejs": "JavaScript runtime built on Chrome's V8 engine.",
+      "grpc": "High-performance, open source universal RPC framework.",
+      "ebpf": "Safe and efficient kernel programmability for observability.",
+      "postgresql": "Advanced open source relational database.",
+      "supabase": "The open source Firebase alternative with Postgres.",
+      "redis": "In-memory data structure store, used as DB and cache.",
+      "pinecone": "Managed vector database for GenAI applications.",
+      "milvus": "Open-source vector database built for GenAI search.",
+      "langchain": "Framework for developing applications powered by LLMs.",
+      "rag": "Retrieval-Augmented Generation for semantic AI search.",
+      "agents": "Autonomous AI entities capable of complex reasoning.",
+      "vercel": "Platform for frontend developers to deploy quickly.",
+      "netlify": "Automated workflow for modern web projects.",
+      "aws": "Comprehensive cloud computing platform by Amazon.",
+      "docker": "Containerization platform for consistent environments.",
+      "k8s": "Production-grade container orchestration at scale.",
+      "prometheus": "Open-source monitoring and alerting toolkit.",
+      "n8n": "Workflow automation tool for technical teams.",
+      "git": "Distributed version control system for code management.",
+      "storybook": "Frontend workshop for building UI components in isolation.",
+      "swagger": "Industry standard for RESTful API documentation."
+    }
   }
 }

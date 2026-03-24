@@ -43,5 +43,5 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
-const resumeUrl = '/Roy%20Andreson.pdf'
+const resumeUrl = '/Valentin%20Castano.pdf'
 </script>

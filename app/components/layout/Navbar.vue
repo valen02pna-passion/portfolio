@@ -3,11 +3,14 @@
     <nav class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
       <button
         type="button"
-        class="inline-flex items-center rounded-md px-3 py-2 text-lg font-semibold tracking-wide !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-white dark:hover:!text-white dark:hover:bg-white/5"
+        class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-xl font-bold tracking-tight !text-slate-950 transition hover:bg-slate-100 dark:!text-white dark:hover:bg-white/5"
         aria-label="Go to home"
         @click="goHome"
       >
-        Roy Andreson
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white shadow-lg dark:bg-white dark:text-slate-950">
+          <Icon name="mdi:fountain-pen-tip" class="h-6 w-6" />
+        </div>
+        <span>Valentin Castano</span>
       </button>
 
       <div class="hidden items-center gap-1 sm:flex">
@@ -73,7 +76,7 @@
         </div>
         <ThemeToggle class="hidden sm:inline-flex" />
         <a
-          href="https://github.com/roy-andreson"
+          href="https://github.com/valen02pna-passion"
           target="_blank"
           rel="noreferrer"
           class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
@@ -92,7 +95,7 @@
           <Icon name="mdi:linkedin" class="h-5 w-5" />
           <span class="sr-only">LinkedIn</span>
         </a> -->
-        <a
+        <!-- <a
           href="https://dev.to/bigchubby666sudo"
           target="_blank"
           rel="noreferrer"
@@ -101,7 +104,7 @@
         >
           <Icon name="simple-icons:devdotto" class="h-5 w-5" />
           <span class="sr-only">DEV Community</span>
-        </a>
+        </a> -->
       </div>
     </nav>
 
@@ -176,34 +179,14 @@
           <span class="ml-1.5">{{ t('nav.resume') }}</span>
         </button>
         <a
-          href="https://github.com/roy-andreson"
+          href="https://github.com/valen02pna-passion"
           target="_blank"
           rel="noreferrer"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 !text-slate-900 dark:bg-white/10 dark:!text-white"
           aria-label="GitHub"
         >
-          <Icon name="mdi:github" class="h-5 w-5" />
+          <Icon name="mdi:github" class="h-6 w-6" />
           <span class="sr-only">GitHub</span>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/roy-andreson-0435733a6/"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
-          aria-label="LinkedIn"
-        >
-          <Icon name="mdi:linkedin" class="h-5 w-5" />
-          <span class="sr-only">LinkedIn</span>
-        </a>
-        <a
-          href="https://dev.to/bigchubby666sudo"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
-          aria-label="DEV Community"
-        >
-          <Icon name="simple-icons:devdotto" class="h-5 w-5" />
-          <span class="sr-only">DEV Community</span>
         </a>
       </div>
     </div>

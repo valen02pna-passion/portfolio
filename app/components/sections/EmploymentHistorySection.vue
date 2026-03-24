@@ -11,36 +11,27 @@
       indicator: 'group-data-[state=completed]:bg-transparent group-data-[state=active]:bg-transparent',
     }">
       <template #indicator="{ item }">
-        <a v-if="item.company.websiteUrl" :href="item.company.websiteUrl" target="_blank" rel="noopener noreferrer"
-          class="block" :title="item.company.company">
-          <CompanyLogo :logo-url="item.company.logoUrl" :badge="item.company.badge" :company-name="item.company.company"
-            :website-url="''" :invert-in-dark="item.company.id === 'descartes'" size="lg" square />
-        </a>
-        <CompanyLogo v-else :logo-url="item.company.logoUrl" :badge="item.company.badge"
-          :company-name="item.company.company" :invert-in-dark="item.company.id === 'descartes'" size="lg" square />
+        <CompanyLogo :logo-url="item.company.logoUrl" :badge="item.company.badge"
+          :company-name="item.company.company" :invert-in-dark="false" size="lg" square />
       </template>
 
       <template #title="{ item }">
-        <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
-          <a v-if="item.company.websiteUrl" :href="item.company.websiteUrl" target="_blank" rel="noopener noreferrer"
-            class="hover:text-sky-600 hover:underline dark:hover:text-sky-400">
-            {{ item.company.company }}
-          </a>
-          <span v-else>{{ item.company.company }}</span>
+        <h3 class="text-2xl font-bold tracking-tight text-slate-950 dark:text-white mb-2">
+          <span>{{ item.company.company }}</span>
         </h3>
       </template>
 
       <template #description="{ item }">
         <div class="divide-y divide-slate-200/60 dark:divide-white/10">
-          <div v-for="(role, roleIdx) in item.company.roles" :key="roleIdx" class="py-4 first:pt-0">
-            <p class="text-base font-semibold text-slate-900 dark:text-white">{{ role.role }}</p>
-            <p class="mt-1 text-base text-slate-500 dark:text-slate-400">{{ role.dates }}</p>
+          <div v-for="(role, roleIdx) in item.company.roles" :key="roleIdx" class="py-6 first:pt-0">
+            <p class="text-lg font-bold text-slate-900 dark:text-slate-100 italic">{{ role.role }}</p>
+            <p class="mt-1 text-sm font-semibold text-sky-600 dark:text-sky-400">{{ role.dates }}</p>
             <p v-if="role.scope"
-              class="mt-2 text-sm font-medium uppercase tracking-wider text-slate-500/80 dark:text-slate-400/80">
-              <span class="text-base font-bold font-mono">{{ t('employment.scopeLabel') }}</span>
-              <span class="text-base">{{ role.scope }}</span>
+              class="mt-3 text-sm font-bold uppercase tracking-widest text-slate-500/90 dark:text-slate-400/90">
+              <span class="mr-2 border-r border-slate-300 pr-2 dark:border-white/10">{{ t('employment.scopeLabel') }}</span>
+              <span>{{ role.scope }}</span>
             </p>
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-base text-slate-700 dark:text-slate-300">
+            <ul class="mt-5 list-disc space-y-3 pl-5 text-base leading-relaxed text-slate-800 dark:text-slate-200">
               <li v-for="bullet in role.bullets" :key="bullet">{{ bullet }}</li>
             </ul>
           </div>

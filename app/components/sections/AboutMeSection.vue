@@ -12,7 +12,7 @@
     >
       <div class="relative h-64 w-full md:h-auto">
         <img
-          src="/Roy_Andreson.jpg"
+          src="/Valentin Castano.jpg"
           :alt="t('about.photoAlt')"
           class="h-full w-full object-cover object-top"
           loading="lazy"

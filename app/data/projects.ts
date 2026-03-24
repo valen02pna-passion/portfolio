@@ -7,53 +7,47 @@ export type Project = {
   stack: string[]
   photoUrl?: string
   gallery?: string[]
+  detailedDescription?: string
 }
 
 export const projects: Project[] = [
   {
-    slug: 'zetabarber-platform',
-    title: 'ZetaBarber',
+    slug: 'rag-pipeline',
+    title: 'High-Performance RAG Pipeline',
     description:
-      'Discovery and booking platform for local barbers built with Next.js and Node.js, using shadcn/ui and React Hooks for a fast, responsive UX. Includes search by city, appointment scheduling, and automated reminders.',
-    liveDemoUrl: 'https://zetabarber.it/',
-    stack: ['Next.js', 'Node.js', 'shadcn/ui', 'React Hooks'],
-    photoUrl:
-      'https://zetabarber.it/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.cddbb3f5.webp&w=1920&q=75',
+      'A scalable retrieval-augmented generation pipeline using Milvus for vector storage, Go for the high-throughput indexing layer, and React for the query interface. Capable of processing 1M+ documents per hour.',
+    liveDemoUrl: 'https://github.com/valen02pna-passion/rag-pipeline',
+    stack: ['Go', 'Milvus', 'React', 'gRPC'],
+    photoUrl: '/projects/rag_pipeline.png',
     gallery: [
-      'https://zetabarber.it/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.cddbb3f5.webp&w=1920&q=75',
-      'https://zetabarber.it/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-platform.9dfb3a7c.png&w=3840&q=75',
+      '/projects/rag_pipeline.png'
     ],
+    detailedDescription: 'This project focuses on building a robust RAG pipeline capable of handling massive datasets. By leveraging Milvus for high-speed vector retrieval and Go for efficient data processing, we achieved sub-second query times across millions of records. The architecture includes a custom indexing layer that prioritizes document relevance and a modular React frontend for intuitive data exploration.'
   },
   {
-    slug: 'warmly-ai-gtm',
-    title: 'Warmly AI GTM Platform',
+    slug: 'llm-agent-framework',
+    title: 'LLM-Orchestrated Agent Framework',
     description:
-      'AI-native GTM platform built with React, Redux, and Tailwind CSS, integrating AI/LLM services with a .NET Core backend. Covers person-level intent signals, AI chat/email engagement, and workflow orchestration for revenue teams.',
-    liveDemoUrl: 'https://www.warmly.ai/',
-    stack: ['React', 'Redux', 'Tailwind CSS', 'AI/LLM', '.NET Core'],
-    photoUrl:
-      'https://cdn.prod.website-files.com/6502f0ce742f93ec6c94944f/695cc5d0a8fb88d0bb174452_e7017e3eebfef000148cd58729c08aaf_hero_visual.webp',
+      'A technical implementation of an autonomous agent framework. Designed with Python and LangChain, deployed on Kubernetes. Features dynamic tool usage and multi-agent consensus.',
+    liveDemoUrl: 'https://github.com/valen02pna-passion/llm-agent-framework',
+    stack: ['Python', 'LangChain', 'Kubernetes', 'Docker'],
+    photoUrl: '/projects/llm_agents.png',
     gallery: [
-      'https://cdn.prod.website-files.com/6502f0ce742f93ec6c94944f/695cc5d0a8fb88d0bb174452_e7017e3eebfef000148cd58729c08aaf_hero_visual.webp',
-      'https://cdn.prod.website-files.com/6502f0ce742f93ec6c94944f/68c837e7b96a420203f90e95_e509d482c6ca2b8ae03c6b3afd64cf6d_Live%20Signal%20Tracking%20AI%20Marketing%20Agents%20Identify%20and%20Convert%20high-intent%20leads.avif',
-      'https://cdn.prod.website-files.com/6502f0ce742f93ec6c94944f/65fb560e36cdbb6c8506c6de_b4e5381e42761e755057d2c664045f87_AI-chat-n.avif',
-      'https://cdn.prod.website-files.com/6502f0ce742f93ec6c94944f/6951aee7a100350c6d28978a_f44ecdcba6edbab914dc2b4f30e37fda_Integrations%20v2.avif',
+      '/projects/llm_agents.png'
     ],
+    detailedDescription: 'The LLM-Orchestrated Agent Framework is designed for complex task automation through autonomous agents. Using Python and LangChain, we implemented a system where multiple agents can collaborate, share tools, and reach a consensus on actions. Deployed on Kubernetes, the framework is highly scalable and supports real-time monitoring of agent reasoning and tool usage.'
   },
   {
-    slug: 'gmelius-email-collaboration',
-    title: 'Gmelius',
+    slug: 'microservices-engine',
+    title: 'Distributed Microservices Engine',
     description:
-      'AI email assistant and shared inbox suite built with React on AWS, backed by .NET Core services. Uses AI/LLM fine-tuning for drafting and triage, with Storybook for UI consistency and Swagger UI for APIs.',
-    liveDemoUrl: 'https://gmelius.com/',
-    stack: ['Storybook', 'Swagger UI', 'React', 'AWS', 'AI/LLM', 'Fine-tuning', '.NET Core'],
-    photoUrl:
-      'https://cdn.prod.website-files.com/673756894ac417efeb387dda/69135952b409202b1977b57f_b38773de9b3f67e85e413119f29336b3_visual-shared-inbox.avif',
+      'A high-performance observability and routing engine for microservices using Rust and eBPF kernel probes. Exposes metrics via a Next.js visualization dashboard.',
+    liveDemoUrl: 'https://github.com/valen02pna-passion/microservices-engine',
+    stack: ['Rust', 'eBPF', 'Next.js', 'Prometheus'],
+    photoUrl: '/projects/microservices_engine.png',
     gallery: [
-      'https://cdn.prod.website-files.com/673756894ac417efeb387dda/69135952b409202b1977b57f_b38773de9b3f67e85e413119f29336b3_visual-shared-inbox.avif',
-      'https://cdn.prod.website-files.com/673756894ac417efeb387dda/69135f6e8c436b60d6cf9a8d_visual-shared-labels.avif',
-      'https://cdn.prod.website-files.com/673756894ac417efeb387dda/6913585375fb32da92cfaeda_visual-automations.avif',
-      'https://cdn.prod.website-files.com/673756894ac417efeb387dda/6913536e10f959ed96e8d55f_visual-analytics.avif',
+      '/projects/microservices_engine.png'
     ],
+    detailedDescription: 'This Distributed Microservices Engine provides deep observability into service-to-service communications. Built with Rust and leveraging eBPF for non-invasive kernel-level monitoring, it captures fine-grained metrics without adding significant latency. Data is piped into a high-performance Prometheus backend and visualized through a custom Next.js dashboard, enabling engineers to quickly identify and resolve bottlenecks in distributed environments.'
   },
 ]

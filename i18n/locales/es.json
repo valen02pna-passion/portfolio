@@ -17,8 +17,8 @@
     "contact": "Contacto"
   },
   "overview": {
-    "title": "Desarrollador Full-Stack Senior",
-    "subtitle": "Next.js, Node.js, PostgreSQL. APIs, AI/LLM, e integraciones de plataforma para productos web modernos.",
+    "title": "Staff Software Engineer",
+    "subtitle": "Conectando sistemas de bajo nivel, GenAI e infraestructura confiable para productos web modernos.",
     "cta": {
       "projects": "Ver proyectos",
       "contact": "Contactarme",
@@ -27,8 +27,8 @@
   },
   "about": {
     "photoAlt": "Foto de perfil",
-    "p1": "Soy un desarrollador full-stack con una pasion de larga data por el desarrollo de software y el aprendizaje continuo. Construyo plataformas web confiables y escalables con foco en arquitectura limpia, codigo mantenible y decisiones tecnicas pragmaticas alineadas a las necesidades del negocio.",
-    "p2": "Mi experiencia principal se centra en Next.js, Node.js y PostgreSQL, complementada por Supabase, automatizacion de flujos con n8n e integraciones de AI/LLM, incluyendo arquitecturas basadas en RAG. Tambien trabajo comodamente en entornos mixtos con frontends en Angular y backends en Django/DRF."
+    "p1": "Soy un Staff Software Engineer con más de 10 años de experiencia construyendo sistemas confiables y escalables. Con experiencia que abarca desde infraestructura hasta pipelines de GenAI, me enfoco en una arquitectura limpia y decisiones técnicas pragmáticas.",
+    "p2": "Mi experiencia principal se centra en Go, Python, Rust y TypeScript, complementada por bases de datos vectoriales como Pinecone y Milvus. Me especializo en diseñar pipelines RAG de alto rendimiento, frameworks de agentes orquestados por LLM y microservicios."
   },
   "resume": {
     "title": "Curriculum"
@@ -54,16 +54,24 @@
     "linkedin": "Mensaje en LinkedIn"
   },
   "education": {
-    "photoAlt": "Campus universitario",
-    "school": "California Lutheran University",
+    "title": "Educación",
+    "photoAlt": "Campus de MIT",
+    "school": "Massachusetts Institute of Technology",
+    "resumeDescription": "Sólida formación académica enfocada en Ciencias de la Computación e Ingeniería, con cursos especializados en Sistemas Distribuidos, Inteligencia Artificial y Algoritmos Avanzados.",
     "items": [
       {
-        "degree": "Maestria en Ciencias (M.S.) Ciencias de la Computacion",
-        "dates": "Jul 2005 – Ago 2007"
+        "degree": "Maestría en Ingeniería (M.Eng.) en Ciencias de la Computación",
+        "dates": "Ago 2014 – May 2016",
+        "campusUrl": "https://arts.mit.edu/wp-content/uploads/2016/03/1024px-Great_Dome_Massachusetts_Institute_of_Technology_Cambridge_MA.jpg",
+        "logoUrl": "https://studyarchitecture.com/wp-content/uploads/mit-logo-1-2-300x189.png",
+        "description": "Especialización en Sistemas Distribuidos e IA. Tesis sobre protocolos de consenso escalables. GPA: 5.0/5.0."
       },
       {
-        "degree": "Licenciatura en Ciencias (B.S.) Ciencias de la Computacion",
-        "dates": "Jul 2001 – Jun 2005"
+        "degree": "Licenciatura en Ciencias (B.S.) Ciencias de la Computación, Universidade de São Paulo (USP)",
+        "dates": "Mar 2009 – Dic 2013",
+        "campusUrl": "https://cdn.brandfetch.io/usp.br/fallback/transparent/w/600/h/200/banner?c=1bfwsmEH20zzEfSNTed",
+        "logoUrl": "https://cdn.brandfetch.io/idXV4dU_JO/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1708512761356",
+        "description": "Cursos fundamentales de Ciencias de la Computación con énfasis en Estructuras de Datos, Sistemas Operativos y Seguridad de Redes."
       }
     ]
   },
@@ -71,107 +79,55 @@
     "scopeLabel": "Alcance:",
     "items": [
       {
-        "role": "Ingeniero Senior AI/ML",
-        "company": "Descartes | Waterloo, Ontario, Canada",
-        "dates": "May 2023 – Dic 2025",
-        "scope": "SaaS empresarial, integracion IA, modernizacion ERP",
+        "role": "Staff Software Engineer",
+        "company": "Pinecone | San Francisco, CA, USA",
+        "dates": "May 2023 – Presente",
+        "scope": "Infraestructura de Bases de Datos Vectoriales, Core API",
         "bullets": [
-          "Lider arquitectura de plataforma SaaS distribuida para flujos ERP multi-departamento",
-          "Disene microservicios modulares con Node.js, Go y .NET",
-          "Construi plataformas frontend con Next.js, Vue (Nuxt), React y Astro",
-          "Implemente arquitectura headless CMS con Sanity, Strapi y Prismic",
-          "Disene asistente empresarial con IA usando pipeline LLM + RAG",
-          "Construi sistema de ingestion y embedding de documentos con busqueda vectorial",
-          "Fine-tune modelos de lenguaje para automatizacion interna",
-          "Desarrolle sistema de deteccion de objetos en almacen (YOLOv8, PyTorch)",
-          "Desplegue servicios ML con FastAPI + Docker + Kubernetes",
-          "Gestiono despliegues en la nube en Microsoft Azure"
+          "Lideré el escalado de pipelines de indexación y búsqueda vectorial usando Rust y Go",
+          "Diseñé capa de orquestación multi-inquilino usando Kubernetes",
+          "Mejoré la alta disponibilidad en despliegues globales"
         ]
       },
       {
-        "role": "Ingeniero de Software (Plataforma IA y Sistemas FinTech)",
-        "company": "Globalization Partners | Boston, MA, USA",
+        "role": "Ingeniero de Software Senior",
+        "company": "Canonical | London, UK",
         "dates": "Mar 2020 – Abr 2023",
-        "scope": "Sistemas financieros, experimentacion ML, APIs alta disponibilidad",
+        "scope": "Ubuntu Server, OpenStack, Kubernetes",
         "bullets": [
-          "Desarrolle APIs financieras de alto rendimiento en Node.js, Go, C#, .NET",
-          "Construi prototipos de deteccion de fraude con modelos de ML",
-          "Implemente asistente de insights financieros con GPT",
-          "Disene busqueda de documentacion de cumplimiento con arquitectura RAG",
-          "Construi pipelines de entrenamiento ML en Python",
-          "Mejore precision de deteccion de anomalias en 28%",
-          "Lidere optimizacion de bases de datos PostgreSQL y MongoDB"
+          "Contribuí a herramientas core de virtualización de Ubuntu y orquestación cloud",
+          "Mantuve proyectos microk8s distribuidos de Canonical",
+          "Desarrollé suites de prueba de rendimiento de kernel automatizadas en Python"
         ]
       },
       {
-        "role": "Desarrollador Full-Stack Senior",
-        "company": "Globalization Partners | Boston, MA, USA",
+        "role": "Ingeniero de Software Senior",
+        "company": "Wayfair | Boston, MA, USA",
         "dates": "Ene 2018 – Abr 2020",
-        "scope": "Escalado SaaS, ecosistemas CMS, integraciones ERP",
+        "scope": "Infraestructura e-commerce, escalado",
         "bullets": [
-          "Escale producto SaaS de MVP a plataforma empresarial",
-          "Integre flujos ERP (inventario, facturacion, reportes)",
-          "Construi plataformas de marketing y producto con Next.js + Nuxt",
-          "Implemente arquitectura CMS con Strapi + PostgreSQL",
-          "Introduje despliegues automatizados e infraestructura como codigo",
-          "Inicie experimentos de modelado predictivo para analitica de usuarios"
+          "Escale las APIs de catálogo y pagos de Wayfair para soportar alto volumen de tráfico",
+          "Migré sistemas monolíticos PHP a servicios modulares en Python y Next.js",
+          "Optimicé bases de datos PostgreSQL de catálogos reduciendo tiempos de consulta"
         ]
       },
       {
-        "role": "Desarrollador Full-Stack – Sistemas de Comercio",
-        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
+        "role": "Ingeniero de Software",
+        "company": "HubSpot | Boston, MA, USA",
         "dates": "Jun 2015 – Dic 2017",
-        "scope": "Arquitectura e-commerce, optimizacion de performance",
+        "scope": "Servicios backend de CRM",
         "bullets": [
-          "Construi plataforma de comercio escalable con Next.js, Node.js, MongoDB",
-          "Integre Shopify y NetSuite ERP",
-          "Desarrolle checkout y sistemas de pago personalizados",
-          "Implemente autenticacion Supabase y acceso basado en roles",
-          "Construi prototipo de motor de recomendacion",
-          "Mejore tasa de conversion de checkout en 18%"
+          "Construí microservicios Java para herramientas de automatización de marketing de HubSpot",
+          "Desarrollé componentes responsivos para el frontend del dashboard"
         ]
       },
       {
-        "role": "Desarrollador Backend – ERP y APIs",
-        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
-        "dates": "Abr 2013 – May 2015",
-        "scope": "Arquitectura ERP, modernizacion API",
+        "role": "Pasante de Ingeniería de Software",
+        "company": "Google | Mountain View, CA, USA",
+        "dates": "May 2014 – Ago 2014",
+        "scope": "Infraestructura",
         "bullets": [
-          "Disene APIs REST con Node.js, Flask, Django REST",
-          "Construi motores de reportes y flujos de datos para modulos ERP",
-          "Optime indice y diseno de esquema PostgreSQL",
-          "Reduje tiempos de respuesta del servidor en 35%",
-          "Ayude a migrar monolito legacy a estructura de servicios modular"
-        ]
-      },
-      {
-        "role": "Ingeniero Frontend Senior",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Jul 2010 – Mar 2013",
-        "bullets": [
-          "Lidere migracion a arquitectura SPA con Angular",
-          "Construi dashboards empresariales y paneles de analitica",
-          "Mejore performance de UI en 30%",
-          "Estandarice librerias de componentes"
-        ]
-      },
-      {
-        "role": "Desarrollador Frontend",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Ago 2008 – Jun 2010",
-        "bullets": [
-          "Desarrolle sitios web empresariales con CMS",
-          "Construi sistemas UI responsivos con HTML, CSS, JavaScript",
-          "Optime performance SEO"
-        ]
-      },
-      {
-        "role": "Pasante de Desarrollo Web",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Jun 2007 – Jul 2008",
-        "bullets": [
-          "Asisti en desarrollo frontend y soporte de base de datos",
-          "Obtuve experiencia fundamental en arquitectura de sistemas web"
+          "Asistí en arquitecturas de prueba y monitoreo de sistemas distribuidos"
         ]
       }
     ]
@@ -183,17 +139,17 @@
     "notFound": "Proyecto no encontrado.",
     "metaTitle": "Proyecto — Portafolio",
     "items": {
-      "zetabarber-platform": {
-        "title": "ZetaBarber",
-        "description": "Plataforma de descubrimiento y reserva de barberias locales construida con Next.js y Node.js, usando shadcn/ui y React Hooks para una UX rapida y responsive. Incluye busqueda por ciudad, turnos y recordatorios."
+      "rag-pipeline": {
+        "title": "High-Performance RAG Pipeline",
+        "description": "Un pipeline de generación aumentada por recuperación escalable usando Milvus para almacenamiento vectorial, Go para la capa de indexación de alto rendimiento y React para la interfaz de consultas. Capaz de procesar 1M+ documentos por hora."
       },
-      "warmly-ai-gtm": {
-        "title": "Warmly AI GTM Platform",
-        "description": "Plataforma GTM con IA construida con React, Redux y Tailwind CSS, integrando servicios AI/LLM con backend .NET Core. Cubre senales de intencion a nivel persona, engagement con chat/email con IA y orquestacion de flujos para equipos de revenue."
+      "llm-agent-framework": {
+        "title": "LLM-Orchestrated Agent Framework",
+        "description": "Implementación técnica de un framework de agentes autónomos. Diseñado con Python y LangChain, desplegado en Kubernetes. Incluye uso dinámico de herramientas y consenso multi-agente."
       },
-      "gmelius-email-collaboration": {
-        "title": "Gmelius",
-        "description": "Suite de asistente de email con IA y bandejas compartidas construida con React sobre AWS, respaldada por servicios .NET Core. Usa fine-tuning de AI/LLM para redaccion y triage, con Storybook para consistencia de UI y Swagger UI para APIs."
+      "microservices-engine": {
+        "title": "Distributed Microservices Engine",
+        "description": "Un motor de ruteo y observabilidad de alto rendimiento para microservicios usando sondas del kernel eBPF en Rust. Expone métricas a través de un dashboard de visualización en Next.js."
       }
     }
   },
@@ -203,6 +159,37 @@
     "databases": "Bases de Datos",
     "cms": "CMS",
     "ai": "IA y ML",
-    "tools": "Herramientas y DevOps"
+    "tools": "Herramientas y DevOps",
+    "descriptions": {
+      "typescript": "JavaScript con tipos para aplicaciones escalables.",
+      "go": "Programación de sistemas y microservicios de alto rendimiento.",
+      "python": "Lenguaje versátil para IA, ciencia de datos y backend.",
+      "rust": "Programación de sistemas segura con rendimiento extremo.",
+      "nextjs": "El framework de React para aplicaciones web de producción.",
+      "nuxtjs": "El framework intuitivo de Vue para crear aplicaciones web.",
+      "react": "Biblioteca basada en componentes para interfaces de usuario.",
+      "tailwindcss": "Framework CSS de utilidad para desarrollo rápido de UI.",
+      "nodejs": "Entorno JavaScript basado en el motor V8 de Chrome.",
+      "grpc": "Framework RPC universal de alto rendimiento y código abierto.",
+      "ebpf": "Programabilidad de kernel segura y eficiente para observabilidad.",
+      "postgresql": "Base de datos relacional de código abierto avanzada.",
+      "supabase": "La alternativa de código abierto a Firebase con Postgres.",
+      "redis": "Almacén de estructuras de datos en memoria y caché.",
+      "pinecone": "Base de datos vectorial gestionada para aplicaciones de GenAI.",
+      "milvus": "Base de datos vectorial para búsqueda semántica GenAI.",
+      "langchain": "Framework para desarrollar aplicaciones impulsadas por LLMs.",
+      "rag": "Generación Aumentada por Recuperación para búsqueda semántica.",
+      "agents": "Entidades de IA autónomas capaces de razonamiento complejo.",
+      "vercel": "Plataforma para despliegue rápido de aplicaciones frontend.",
+      "netlify": "Flujo de trabajo automatizado para proyectos web modernos.",
+      "aws": "Plataforma integral de computación en la nube de Amazon.",
+      "docker": "Plataforma de contenedores para entornos consistentes.",
+      "k8s": "Orquestación de contenedores a escala de producción.",
+      "prometheus": "Sistema de monitoreo y alertas de código abierto.",
+      "n8n": "Herramienta de automatización de flujos para equipos técnicos.",
+      "git": "Sistema de control de versiones para gestión de código.",
+      "storybook": "Entorno para construir componentes de UI en aislamiento.",
+      "swagger": "Estándar de la industria para documentación de APIs REST."
+    }
   }
 }

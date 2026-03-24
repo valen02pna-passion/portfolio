@@ -18,9 +18,9 @@
         class="group block"
       >
         <div
-          class="h-full overflow-hidden rounded-2xl border border-slate-200/60 bg-white/80 p-0 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-white/5"
+          class="h-full overflow-visible rounded-2xl border border-slate-200/60 bg-white/80 p-0 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-white/5"
         >
-          <div class="aspect-[16/9] w-full overflow-hidden bg-slate-100 dark:bg-white/5">
+          <div class="aspect-[16/9] w-full overflow-hidden rounded-t-2xl bg-slate-100 dark:bg-white/5">
             <img
               v-if="p.photoUrl"
               :src="p.photoUrl"
@@ -36,15 +36,13 @@
             <p class="mt-2 line-clamp-2 text-sm text-slate-700 dark:text-slate-300">
               {{ p.description }}
             </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span
-                v-for="tag in p.stack"
-                :key="tag"
-                class="rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1 text-xs text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200"
-              >
-                {{ tag }}
-              </span>
-            </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <SkillTag
+                  v-for="tag in p.stack"
+                  :key="tag"
+                  :name="tag"
+                />
+              </div>
           </div>
         </div>
       </NuxtLink>
@@ -55,6 +53,7 @@
 <script setup lang="ts">
 import { projects } from '~/data/projects'
 import SectionTitle from '~/components/ui/SectionTitle.vue'
+import SkillTag from '~/components/ui/SkillTag.vue'
 
 const { t, te } = useI18n()
 const localePath = useLocalePath()

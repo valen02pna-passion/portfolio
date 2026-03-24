@@ -2,6 +2,7 @@ export type SkillItem = {
   name: string
   icon: string
   color: string
+  descriptionKey?: string
 }
 
 export type SkillCategory = {
@@ -13,62 +14,63 @@ export const skillCategories: SkillCategory[] = [
   {
     labelKey: 'frontend',
     items: [
-      { name: 'Next.js', icon: 'simple-icons:nextdotjs', color: '#000000' },
-      { name: 'Nuxt.js', icon: 'simple-icons:nuxtdotjs', color: '#00DC82' },
-      { name: 'React', icon: 'simple-icons:react', color: '#61DAFB' },
-      { name: 'Angular', icon: 'simple-icons:angular', color: '#DD0031' },
-      { name: 'Vue', icon: 'simple-icons:vuedotjs', color: '#42B883' },
-      { name: 'Tailwind CSS', icon: 'simple-icons:tailwindcss', color: '#06B6D4' },
-      { name: 'shadcn/ui', icon: 'simple-icons:shadcnui', color: '#18181B' },
-      { name: 'Redux', icon: 'simple-icons:redux', color: '#764ABC' },
+      { name: 'TypeScript', icon: 'simple-icons:typescript', color: '#3178C6', descriptionKey: 'typescript' },
+      { name: 'Go', icon: 'simple-icons:go', color: '#00ADD8', descriptionKey: 'go' },
+      { name: 'Python', icon: 'simple-icons:python', color: '#3776AB', descriptionKey: 'python' },
+      { name: 'Rust', icon: 'simple-icons:rust', color: '#000000', descriptionKey: 'rust' },
+      { name: 'Next.js', icon: 'simple-icons:nextdotjs', color: '#000000', descriptionKey: 'nextjs' },
+      { name: 'Nuxt.js', icon: 'simple-icons:nuxtdotjs', color: '#00DC82', descriptionKey: 'nuxtjs' },
+      { name: 'React', icon: 'simple-icons:react', color: '#61DAFB', descriptionKey: 'react' },
+      { name: 'Tailwind CSS', icon: 'simple-icons:tailwindcss', color: '#06B6D4', descriptionKey: 'tailwindcss' }
     ],
   },
   {
     labelKey: 'backend',
     items: [
-      { name: 'Node.js', icon: 'simple-icons:nodedotjs', color: '#339933' },
-      { name: 'Django', icon: 'simple-icons:django', color: '#092E20' },
-      { name: 'Django REST Framework', icon: 'simple-icons:django', color: '#092E20' },
-      { name: '.NET Core', icon: 'simple-icons:dotnet', color: '#512BD4' },
-      { name: 'Prisma', icon: 'simple-icons:prisma', color: '#2D3748' },
+      { name: 'Node.js', icon: 'logos:nodejs-icon', color: '#339933', descriptionKey: 'nodejs' },
+      { name: 'gRPC', icon: 'logos:grpc', color: '#244C5A', descriptionKey: 'grpc' },
+      { name: 'eBPF', icon: 'mdi:linux', color: '#FCC624', descriptionKey: 'ebpf' }
     ],
   },
   {
     labelKey: 'databases',
     items: [
-      { name: 'PostgreSQL', icon: 'simple-icons:postgresql', color: '#4169E1' },
-      { name: 'MongoDB', icon: 'simple-icons:mongodb', color: '#47A248' },
-      { name: 'Supabase', icon: 'simple-icons:supabase', color: '#3ECF8E' },
-      { name: 'SQL', icon: 'mdi:database', color: '#336791' },
-    ],
-  },
-  {
-    labelKey: 'cms',
-    items: [
-      { name: 'Strapi', icon: 'simple-icons:strapi', color: '#2F2E8B' },
-      { name: 'Sanity', icon: 'simple-icons:sanity', color: '#F03E2F' },
-      { name: 'Prismic', icon: 'simple-icons:prismic', color: '#5163BA' },
+      { name: 'PostgreSQL', icon: 'logos:postgresql', color: '#4169E1', descriptionKey: 'postgresql' },
+      { name: 'Supabase', icon: 'logos:supabase-icon', color: '#3ECF8E', descriptionKey: 'supabase' },
+      { name: 'Redis', icon: 'logos:redis', color: '#DC382D', descriptionKey: 'redis' },
+      { name: 'Pinecone', icon: 'logos:pinecone-icon', color: '#000000', descriptionKey: 'pinecone' },
+      { name: 'Milvus', icon: 'simple-icons:milvus', color: '#0CA5E9', descriptionKey: 'milvus' }
     ],
   },
   {
     labelKey: 'ai',
     items: [
-      { name: 'AI/LLM Integration', icon: 'mdi:robot-outline', color: '#8B5CF6' },
-      { name: 'RAG', icon: 'mdi:brain', color: '#6366F1' },
-      { name: 'LangChain', icon: 'simple-icons:langchain', color: '#1C3C3C' },
+      { name: 'LangChain', icon: 'simple-icons:langchain', color: '#1C3C3C', descriptionKey: 'langchain' },
+      { name: 'RAG', icon: 'mdi:brain', color: '#6366F1', descriptionKey: 'rag' },
+      { name: 'Agentic Frameworks', icon: 'mdi:robot-outline', color: '#8B5CF6', descriptionKey: 'agents' }
     ],
   },
   {
     labelKey: 'tools',
     items: [
-      { name: 'Vercel', icon: 'simple-icons:vercel', color: '#000000' },
-      { name: 'Netlify', icon: 'simple-icons:netlify', color: '#00C7B7' },
-      { name: 'AWS', icon: 'simple-icons:amazonaws', color: '#FF9900' },
-      { name: 'Docker', icon: 'simple-icons:docker', color: '#2496ED' },
-      { name: 'n8n', icon: 'simple-icons:n8n', color: '#FF6D5A' },
-      { name: 'Git', icon: 'simple-icons:git', color: '#F05032' },
-      { name: 'Storybook', icon: 'simple-icons:storybook', color: '#FF4785' },
-      { name: 'Swagger UI', icon: 'simple-icons:swagger', color: '#85EA2D' },
+      { name: 'Vercel', icon: 'simple-icons:vercel', color: '#000000', descriptionKey: 'vercel' },
+      { name: 'Netlify', icon: 'simple-icons:netlify', color: '#00C7B7', descriptionKey: 'netlify' },
+      { name: 'AWS', icon: 'simple-icons:amazonaws', color: '#FF9900', descriptionKey: 'aws' },
+      { name: 'Docker', icon: 'simple-icons:docker', color: '#2496ED', descriptionKey: 'docker' },
+      { name: 'Kubernetes', icon: 'simple-icons:kubernetes', color: '#326CE5', descriptionKey: 'k8s' },
+      { name: 'Prometheus', icon: 'simple-icons:prometheus', color: '#E6522C', descriptionKey: 'prometheus' },
+      { name: 'n8n', icon: 'simple-icons:n8n', color: '#FF6D5A', descriptionKey: 'n8n' },
+      { name: 'Git', icon: 'simple-icons:git', color: '#F05032', descriptionKey: 'git' },
+      { name: 'Storybook', icon: 'simple-icons:storybook', color: '#FF4785', descriptionKey: 'storybook' },
+      { name: 'Swagger UI', icon: 'simple-icons:swagger', color: '#85EA2D', descriptionKey: 'swagger' },
     ],
   },
 ]
+
+export function findSkillByName(name: string): SkillItem | undefined {
+  for (const category of skillCategories) {
+    const item = category.items.find((i) => i.name.toLowerCase() === name.toLowerCase())
+    if (item) return item
+  }
+  return undefined
+}

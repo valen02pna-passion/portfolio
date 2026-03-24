@@ -30,12 +30,15 @@
             <span class="inline-flex" :style="{ color: item.color }">
               <Icon :name="item.icon" class="h-6 w-6" />
             </span>
-            <span
-              class="skill-tooltip pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2.5 py-1.5 text-xs font-medium text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover/chip:opacity-100 dark:bg-slate-100 dark:text-slate-900"
+            <div
+              class="skill-tooltip pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 w-48 -translate-x-1/2 rounded-lg bg-slate-900 p-3 text-xs text-white shadow-xl transition-all duration-200 opacity-0 group-hover/chip:opacity-100 group-hover/chip:-translate-y-1 dark:bg-white dark:text-slate-900"
             >
-              {{ item.name }}
-              <span class="absolute left-1/2 top-full -translate-x-1/2 border-[5px] border-transparent border-t-slate-900 dark:border-t-slate-100" />
-            </span>
+              <p class="font-bold border-b border-white/10 pb-1 mb-1.5 dark:border-slate-200">{{ item.name }}</p>
+              <p v-if="item.descriptionKey" class="leading-relaxed text-slate-300 dark:text-slate-600">
+                {{ t(`skills.descriptions.${item.descriptionKey}`) }}
+              </p>
+              <span class="absolute left-1/2 top-full -translate-x-1/2 border-[6px] border-transparent border-t-slate-900 dark:border-t-white" />
+            </div>
           </span>
         </div>
       </div>
