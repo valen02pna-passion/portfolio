@@ -2,7 +2,19 @@
 
 Clean, single-page portfolio built with Nuxt 4 and Tailwind CSS. Includes anchor navigation, a timeline-style employment section, animated reveals, project detail pages, and a light/dark/system theme toggle.
 
-![California Lutheran University campus](public/California%20Lutheran%20University.jpg)
+## Education
+
+- **Master of Engineering (M.Eng.) in Computer Science**
+  *Massachusetts Institute of Technology (MIT)* | 2014 – 2016
+  Specialized in Distributed Systems and AI.
+
+  <img src="https://arts.mit.edu/wp-content/uploads/2016/03/1024px-Great_Dome_Massachusetts_Institute_of_Technology_Cambridge_MA.jpg" alt="MIT Campus" width="600" />
+
+- **Bachelor of Science (B.S.) in Computer Science**
+  *Universidade de São Paulo (USP)* | 2009 – 2013
+  Focused on Data Structures and Network Security.
+
+  <img src="https://cdn.brandfetch.io/usp.br/fallback/transparent/w/600/h/200/banner?c=1bfwsmEH20zzEfSNTed" alt="USP Campus" width="600" />
 
 ## Features
 
@@ -93,23 +105,11 @@ bun run preview
 
 ## Customization
 
-- **Hero + contact**: update content in `app/pages/index.vue`
-- **Section copy + layout**: update components in `app/components/sections/`
-- **Projects data**: edit `app/data/projects.ts`
-- **Navbar + footer links**: update `app/components/layout/Navbar.vue` and `app/components/layout/Footer.vue`
-- **Theme logic**: tweak `app/composables/useTheme.ts`
-- **Scroll-to-top button**: `app/components/ui/ScrollToTopButton.vue`
-- **Buttons styling**: `app/assets/css/tailwind.css`
-- **Images**: place assets in `public/` (e.g. `public/selfie.jpg`, `public/universidad_tecnologica_nacional_cover.jpg`)
-
-## Environment Variables (Optional)
-
-The config is ready for Supabase, but it is optional unless you wire it up in your app.
-
-```bash
-SUPABASE_URL=your-url
-SUPABASE_PUBLISHABLE_KEY=your-anon-key
-```
+- **Section content**: Update localized strings in `i18n/locales/en.json` and `es.json`
+- **Projects data**: Edit `app/data/projects.ts` (slugs/images) and `i18n/locales/` (content)
+- **Skills data**: Update `app/data/skills.ts` and technical descriptions in `i18n/locales/`
+- **Navbar + footer**: Update `app/components/layout/Navbar.vue` and `app/components/layout/Footer.vue`
+- **Images**: Place assets in `public/`
 
 ## Useful Scripts
 
